@@ -8,7 +8,7 @@ Notes
 Two pipelines -- files exported from AT and rendered in PDF every night for editing/QC, and edited/QC files ready for publication
 
 AT -> PDF for QC
-0. Presumption -- resource records must have proper finding aid status set. These scripts should run to provide a PDF preview of work done nightly.
+Presumption -- resource records must have proper finding aid status set. These scripts should run to provide a PDF preview of work done nightly.
 1. Export EAD from AT based on time last updated and finding aid status. 
   if "Ready for Review", download with internal-only components suppressed to FindingAids_MSSA/QCCopies.
   if "Ready for Review Internal Only", download one copy with internal-only components suppressed to FindingAids_MSSA/QCCopies. Download another copy without components suppressed to FindingAids_MSSA/QCCopies/Internal-Only
@@ -17,7 +17,7 @@ AT -> PDF for QC
 4. Delete intermediate xml files, save PDFs in folders labelled by date.
 
 AT -> EAD for YFAD
-0. Presumption -- resource records must have proper finding aid status set. These scripts should run to update YFAD once per week (Thursday evening?)
+Presumption -- resource records must have proper finding aid status set. These scripts should run to update YFAD once per week (Thursday evening?)
 1. Export EAD from AT based on time last updated and finding aid status.
   if "Complete", download with internal-only components suppressed to FindingAids_MSSA/AT_EAD_Export.
   if "Complete Internal Only", download one copy with internal-only components suppressed to FindingAids_MSSA/AT_EAD_Export. Download another copy without components suppressed to XXXX (place where dumb sharepoint shit goes)
