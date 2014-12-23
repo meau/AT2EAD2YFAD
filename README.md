@@ -11,8 +11,8 @@ AT -> PDF for QC
 
 Presumption -- resource records must have proper finding aid status set. These scripts should run to provide a PDF preview of work done nightly.
 
-1. Export EAD from AT based on time last updated and finding aid status. if "Ready for Review", download with internal-only components suppressed to FindingAids_MSSA/QCCopies. if "Ready for Review Internal Only", download one copy with internal-only components suppressed to FindingAids_MSSA/QCCopies. Download another copy without components suppressed to FindingAids_MSSA/QCCopies/Internal-Only
-2. Rename files based on MSSA conventions
+1. Every Monday, export EAD from AT based on time last updated and finding aid status. if "Ready for Review", download with internal-only components suppressed to FindingAids/MSSA/QCCopies. if "Ready for Review Internal Only", download one copy with internal-only components suppressed to FindingAids/MSSA/QCCopies. Download another copy without components suppressed to FindingAids_MSSA/QCCopies/Internal-Only
+2. Rename files based on MSSA conventions -- mssa.ms.0000.xml mssa.ru.0000.xml (talk to Mary about updating the EADID)
 3. For files in QCCopies, transform ATEAD to YaleBPGEAD.pdf with xsl-fo, suppressInternalComponents = Y. For files in QCCopies/Internal-Only, transform ATEAD to YaleBPGEAD.pdf with xsl-fo, suppressInternalComponents = N.
 4. Delete intermediate xml files, save PDFs in folders labelled by date.
 
@@ -28,3 +28,7 @@ Presumption -- resource records must have proper finding aid status set. These s
 6. Copies of valid files should also be saved to MasterEAD2002_AT
 7. Upload files from edits_completed_for_YFAD to fedora/mssa
 8. Create log/database(?) of transformation steps.
+
+AT -> EAD for ArchiveGrid
+
+AT -> EAD for Connecticut Archives Online 
